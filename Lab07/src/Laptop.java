@@ -1,8 +1,24 @@
 
-public class Laptop extends Product {
+public class Laptop extends Product implements Networked {
 	private double totalCapacity;
 	private double usedCapcity;
 	
+	
+	
+
+	@Override
+	public boolean isConnected() {
+		return false;
+	}
+
+	@Override
+	public double maxSpeed() {
+		return 100.0;
+	}
+
+	public double getUsedCapcity() {
+		return usedCapcity;
+	}
 	
 	public double getTotalCapacity() {
 		return totalCapacity;
@@ -11,11 +27,7 @@ public class Laptop extends Product {
 	public void setTotalCapacity(double totalCapacity) {
 		this.totalCapacity = totalCapacity;
 	}
-
-	public double getUsedCapcity() {
-		return usedCapcity;
-	}
-
+	
 	public void setUsedCapcity(double usedCapcity) {
 		this.usedCapcity = usedCapcity;
 	}
