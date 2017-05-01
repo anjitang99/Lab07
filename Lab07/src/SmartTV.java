@@ -11,7 +11,7 @@ public class SmartTV extends Product{
 	
 	public boolean isConnected()
 	{
-		return true;
+		return false;
 	}
 	
 	public double maxSpeed()
